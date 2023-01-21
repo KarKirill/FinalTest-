@@ -1,0 +1,68 @@
+@use '../../../../scss/theme/colors';
+@use '../../../../scss/theme/typography';
+.mat-mdc-dialog-title {
+    @include typography.title-large;
+    color: colors.on-surface();
+}
+
+.mat-mdc-dialog-actions {
+    justify-content: end;
+    padding-inline: 24px;
+    padding-bottom: 20px;
+}
+.action{
+    display: flex;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+}
+.mat-mdc-dialog-content.mdc-dialog__content{
+    display: flex;
+    flex-direction: column;
+
+}
+.tbs{
+    display: flex;
+    flex-direction: column;
+}
+.author{
+   
+    display: flex;
+    flex-direction: column;
+}
+.dialog_btn_first{
+    margin-top: 28px;
+    min-width: 35px;
+    margin-left: 24px;
+}
+.dialog_btn_second{
+    margin-top: 28px;
+
+    margin-right: 24px;
+}
+
+h1.books{
+    margin-top: 12px;
+    color: colors.on-surface();
+}
+.inpt{
+    background-color: colors.on-surface-variant();
+}
+.mat-mdc-dialog-surface {
+    background: colors.surface() !important;
+  
+    h1 {
+        @include typography.headline-small();
+        color: colors.on-surface();
+    }
+  
+    .mat-mdc-dialog-actions {
+        .mat-mdc-button {
+            background: colors.surface() !important;
+            color: colors.on-surface() !important;
+        }
+    }
+
+}

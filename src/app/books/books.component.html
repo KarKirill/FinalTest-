@@ -1,0 +1,11 @@
+<h1 class="books">Ваша книжная полка</h1>
+<button mat-raised-button color='primary' (click)="createBook()" class="addbook_btn">Положить книгу<mat-icon>add</mat-icon></button>
+<button mat-raised-button color='primary' (click)="addBooks()" class="addbook_btn">Подобрать книги<mat-icon>search</mat-icon></button>
+<button mat-raised-button color='primary' (click)="deleteBooks()" class="addbook_btn">Убрать все книги<mat-icon>delete</mat-icon></button>
+<button mat-raised-button color='primary' (click)="deleteBooks()" class="addbook_btn">Поделиться библиотекой<mat-icon>Download</mat-icon></button>
+<div *ngFor="let book of books" class="title_book">
+  {{ book.author}}: {{ book.name }}
+  <button mat-icon-button (click)="editBook(book)">
+    <mat-icon>edit</mat-icon>
+  </button>
+</div>
